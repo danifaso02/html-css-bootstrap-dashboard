@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------
+HEADER
+------------------*/
+header{
+    background-color: red;
+    height: 4.375rem;
+}
+.row-header{
+    display: flex;
+}
+img{
+    padding: 20px 0;
+    width: 100%;
+}
+/*------------------
+PAGE CONTAINER
+------------------*/
+.page-container{
+    background-color: black;
+    height: calc(100vh - 70px);
+    display: flex;
+}
+/*------------------
+ASIDE
+------------------*/
+aside{
+    width: 200px;
+    background-color: blue;
+    flex-shrink: 0;
+}
+/*------------------
+MAIN
+------------------*/
+main{
+    background-color: #fff;
+    flex-grow: 1;
+    overflow-y: auto;
+}
