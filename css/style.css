@@ -1,44 +1,166 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import url('common.css');
+
+/*----------
+HEADER
+----------*/
+header{
+  background-color: white;
+  height: 3.75rem;
+  z-index: 100;
+}
+  
+.ms-row-height{
+  height: 3.75rem;
+}
+  
+.ms-logo-header{
+  width: 4.6875rem;
+  padding-right: 1.25rem;
+}
+  
+.ms-search-bar{
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: .3125rem;
+}
+  
+.ms-search-input{
+  width: 100%;
+  background-color: #e5e5e5;
+  border: none;
+}
+  
+.ms-search-button{
+  border: none;
+  background-color: #e5e5e5;
+  border-radius: .3125rem;
+}
+  
+.ms-header-icon{
+  font-size: .75rem;
+}
+  
+.ms-header-btns{
+  border: none;
+  background-color: white;
+}
+  
+.notifications-icon{
+  color: #ff8f00;
 }
 
-/*------------------
-HEADER
-------------------*/
-header{
-    background-color: red;
-    height: 4.375rem;
-}
-.row-header{
-    display: flex;
-}
-img{
-    padding: 20px 0;
-    width: 100%;
-}
-/*------------------
-PAGE CONTAINER
-------------------*/
-.page-container{
-    background-color: black;
-    height: calc(100vh - 70px);
-    display: flex;
-}
-/*------------------
+/*-----------
 ASIDE
-------------------*/
+-----------*/
 aside{
-    width: 200px;
-    background-color: blue;
-    flex-shrink: 0;
+  background-color: #051e34;
+  background-image: url("sidebar-bg.png");
 }
-/*------------------
+  
+.ms-aside-row{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  height: calc(100vh - 3.75rem);
+}
+  
+.ms-aside-top{
+  width: 100%;
+  height: 50%;
+}
+  
+.ms-hss{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+  
+.ms-aside-icons{
+  font-size: 1.5625rem;
+}
+  
+.ms-stats-text{
+  margin-left: .3125rem;
+}
+  
+.ms-aside-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 50%;
+}
+  
+.ms-nav-link-bottom{
+  text-decoration: none;
+  color: white;
+}
+  
+@media screen and (min-width: 992px){
+  aside{
+    width: 12.5rem;
+  }
+}
+  
+/*----------
 MAIN
-------------------*/
+-----------*/
 main{
-    background-color: #fff;
-    flex-grow: 1;
-    overflow-y: auto;
+  height: calc(100vh - 3.75rem);
+  overflow-y: auto;
+  flex-grow: 1;
+}
+  
+.main-head{
+  color: white;
+  background-color: #1c71e8;
+}
+  
+.ms-mine-badge{
+  font-size: .75rem;
+  color: white;
+  background-color: #185bb9;
+  border-radius: 3.125rem;
+  object-fit: 1;
+}
+  
+.ms-main-table{
+  border: .0625rem solid #e5e5e5;
+  border-radius: .625rem;
+}
+  
+.ms-off-canvas-btn{
+  background-color: white;
+  color: #0d6efd;
+  border-color: #0d6efd;
+  border-radius: .3125rem;
+}
+  
+.ms-off-canvas-action{
+  padding: .4375rem;
+}
+  
+.ms-table-head-text{
+  font-size: .75rem;
+}
+  
+.ms-table-img{
+  width: 1.5625rem;
+}
+  
+.ms-table-class-name{
+  font-weight: lighter;
+  padding-left: .625rem;
+}
+  
+.ms-table-buttons{
+  background-color: white;
+  color: #6c757d;
+  border-radius: .3125rem;
+  padding: .3125rem .625rem;
+}
+.ms-card-link{
+  text-decoration: none;
 }
